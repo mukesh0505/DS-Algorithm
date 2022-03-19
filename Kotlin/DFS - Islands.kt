@@ -37,7 +37,7 @@ class Island {
 
     fun countIsland(matrix: Array<IntArray>): Int {
         val rowCount = matrix.size
-        val colCount = matrix[0]?.size ?: 0
+        val colCount = matrix[0].size
         val visited = Array(rowCount) {
             BooleanArray(colCount) {false}
         }
